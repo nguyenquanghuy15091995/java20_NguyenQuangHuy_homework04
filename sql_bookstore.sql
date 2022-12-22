@@ -31,3 +31,18 @@ CREATE TABLE tb_publisher (
     publ_address nvarchar(2000),
     PRIMARY KEY (publ_id)
 );
+
+CREATE TABLE tb_topic (
+	topic_id int auto_increment,
+    topic_name nvarchar(255),
+    PRIMARY KEY (topic_id)
+);
+
+CREATE TABLE tb_order (
+	order_id int auto_increment,
+    order_createdDate date,
+    order_shipDate date,
+    order_isPayed bool,
+    order_shipStatus
+    PRIMARY KEY (order_id)
+);
